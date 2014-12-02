@@ -19,4 +19,6 @@ The  `flagfx` string is a comma-separated list of functions, where each function
 - `s` or `c` for sine or cosine, respectively
 - An optional angle scaling expression of the form `*NUM` or `/NUM`.
 
-The string `flagfx=s,s/3,c/5` corresponds to the expression `sin(angle) + sin(angle / 3) + cos(angle / 5)`.
+The attribute `flagfx="s,s/3,c/5"` corresponds to the expression `sin(angle) + sin(angle / 3) + cos(angle / 5)`.
+
+The speed of the base angle animation itself is currently hard-coded. Enjoy.
