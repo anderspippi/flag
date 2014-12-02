@@ -1,5 +1,12 @@
 /*
- * 
+ * flags.js
+ *
+ * A very simplistic sine flag rendering thingie.
+ *
+ * Copyright (c) 2014 by Emil Brink.
+ *
+ * This is MIT licensed, see the LICENSE file (or
+ * http://opensource.org/licenses/MIT) for details.
 */
 
 var flags = [];
@@ -21,7 +28,7 @@ var Flag = function(canvas, text, fx) {
 
 	// Analyze the fx string, which controls the flag effect. Very basic.
 	// Use e.g. "s,s/3,s*5" to get sin(angle) * sin(angle / 3) * sin(angle * 5)
-	// No support for scaling the sin itself yet.
+	// No support for scaling the term value itself.
 	var FlagFxTerm = function(fxp) {
 		this.func = fxp[0] == "s" ? Math.sin : Math.cos;
 		this.scale = 1;
