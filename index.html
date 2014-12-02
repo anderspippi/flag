@@ -7,15 +7,26 @@
  <title>flag.js</title>
 
  <style>
+  .flags {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
   .flag {
-    border: 1px solid black;
+    width: 100%;
+
+    position: relative;
+    transform: translateY(50%);
   }
  </style>
 </head>
 
 <body>
- <canvas class="flag" width="160px" height="128px" flagtext="emilbrink.se"></canvas>
- <canvas class="flag" width="320px" height="256px" flagtext="unwind.se"></canvas>
+ <div class="flags">
+  <a href="http://unwind.se/">
+    <canvas class="flag" flagtext="emilbrink.se"></canvas>
+  </a>
+ </div>
 
  <script src="flag.js"></script>
 </body>
