@@ -12,3 +12,11 @@ The library, when loaded, will animate all `<canvas>` elements with the attribut
 It supports the following attributes:
 - Use `flagtext` to set the text to animate.
 - Use `flagfx` to set the desired sine/cosine functions to apply along the text.
+
+Function specification
+----------------------
+The  `flagfx` string is a comma-separated list of functions, where each function is:
+- `s` or `c` for sine or cosine, respectively
+- An optional angle scaling expression of the form `*NUM` or `/NUM`.
+
+The string `flagfx=s,s/3,c/5` corresponds to the expression `sin(angle) + sin(angle / 3) + cos(angle / 5)`.
